@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклад блоків</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        #blockA {
+            height: 125px;
+            width: 100%;
+            background-color: lightblue;
+        }
+
+        #content {
+            display: flex;
+            flex: 1; 
+        }
+
+        #blockA1 {
+            height: 500px;
+            width: 300px;
+            background-color: blue;
+        }
+
+        #blockA2 {
+            height: 500px;
+            flex-grow: 1; 
+            background-color: green;
+        }
+
+        #blockA3 {
+            height: 500px;
+            width: 200px;
+            background-color: coral;
+        }
+
+        #blockB {
+            height: 125px;
+            width: 100%;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="blockA">Блок А</div>
+    
+    <div id="content">
+        <div id="blockA1">Блок A1</div>
+        <div id="blockA2">Блок A2</div>
+        <div id="blockA3">Блок A3</div>
+    </div>
+
+    <div id="blockB">Блок B</div>
+
+</body>
+</html>

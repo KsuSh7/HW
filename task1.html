@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приклад блоків</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #blockA {
+            width: 100%;
+            height: 400px;
+            color: blue;
+            position: relative;
+        }
+
+        #blockB {
+            width: 400px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 100px;
+            position: relative;
+        }
+
+        #blockC {
+            height: 100px;
+            width: 110px;
+            color: red;
+            background-color: white;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #blockD {
+            height: 20px;
+            width: 80px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="blockA">Текст блоку A</div>
+    <div id="blockB">Текст блоку B
+        <div id="blockC">Текст блоку C</div>
+    </div>
+    <div id="blockD">Текст блоку D</div>
+
+</body>
+</html>
